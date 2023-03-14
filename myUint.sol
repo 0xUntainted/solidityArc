@@ -8,6 +8,10 @@ will have the default value of uint256/int256 */
 but always be mindful as the bit numbers are benchmark to how much bit can be stored. you do not 
 want to use small storage for a big number */
 
+/* Integers in Solidity are always rounded down! If we divide e.g. 100 / 101 = 0.990... 
+but in Solidity the result will be 0. Integers in Solidity are actually cut off (not even rounded), 
+in other words always rounded down. */
+
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.14;
 
